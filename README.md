@@ -7,6 +7,8 @@ As previous tasks it uses `yarn` and `jest` testing framework so the process is 
 3. Run `yarn`.
 4. **To run tests:** run `yarn test` or `yarn watch` depending on your preference.
 
+---
+
 # Build a Library
 
 Congratulations, you’ve passed the grueling rigmarole of librarian school and have become head librarian at your local Books-‘N-Stuff.
@@ -21,11 +23,11 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 
 **Properties**:
 
-- author (string)
-- title (string)
-- pages (number)
-- isCheckedOut (boolean, initially false)
-- ratings (array, initially empty)
+- author: _string_
+- title: _string_
+- pages: _number_
+- isCheckedOut: _boolean, initially false_
+- ratings: _array, initially empty_
 
 **Getters**: all properties have a getter
 
@@ -39,11 +41,11 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 
 **Properties**:
 
-- director (string)
-- title (string)
-- runTime (number)
-- isCheckedOut (boolean, initially false)
-- ratings (array, initially empty)
+- director: _string_
+- title: _string_
+- runTime: _number_
+- isCheckedOut: _boolean, initially false_
+- ratings: _array, initially empty_
 
 **Getters**: all properties have a getter
 
@@ -57,11 +59,11 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 
 **Properties**:
 
-- artist (string)
-- title (string)
-- isCheckedOut (boolean, initially false)
-- and ratings (array, initially empty)
-- songs (array of strings)
+- artist: _string_
+- title: _string_
+- isCheckedOut: _boolean, initially false_
+- and ratings: _array, initially empty_
+- songs: _array of strings_
 
 **Getters**: all properties have a getter
 
@@ -70,6 +72,8 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 - .getAverageRating()
 - .toggleCheckOutStatus()
 - .addRating()
+
+---
 
 After you implemented each of them,
 
