@@ -75,8 +75,8 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 
 ---
 
-After you implemented each of them,
+After you implemented each of them in `resources.js`, inside `index.js`:
 
-- create an object at least one of the class type in `index.js`
-- `console.log` each getter value
+- create an object at least from one of the class type
+- `console.log` each getter's value
 - test each method's behavior
