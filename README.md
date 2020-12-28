@@ -23,55 +23,55 @@ Books-‘N-Stuff carries three different types of media: books, CDs, and movies.
 
 **Properties**:
 
-- author: _string_
-- title: _string_
-- pages: _number_
-- isCheckedOut: _boolean, initially false_
-- ratings: _array, initially empty_
+- `author`: _string_
+- `title`: _string_
+- `pages`: _number_
+- `isCheckedOut`: _boolean, initially false_
+- `ratings`: _array, initially empty_
 
 **Getters**: all properties have a getter
 
 **Methods**:
 
-- .getAverageRating()
-- .toggleCheckOutStatus()
-- .addRating()
+- `.getAverageRating()`
+- `.toggleCheckOutStatus()`
+- `.addRating()`
 
 ### Movie
 
 **Properties**:
 
-- director: _string_
-- title: _string_
-- runTime: _number_
-- isCheckedOut: _boolean, initially false_
-- ratings: _array, initially empty_
+- `director`: _string_
+- `title`: _string_
+- `runTime`: _number_
+- `isCheckedOut`: _boolean, initially false_
+- `ratings`: _array, initially empty_
 
 **Getters**: all properties have a getter
 
 **Methods**:
 
-- .getAverageRating()
-- .toggleCheckOutStatus()
-- .addRating()
+- `.getAverageRating()`
+- `.toggleCheckOutStatus()`
+- `.addRating()`
 
 ### CD
 
 **Properties**:
 
-- artist: _string_
-- title: _string_
-- isCheckedOut: _boolean, initially false_
-- and ratings: _array, initially empty_
-- songs: _array of strings_
+- `artist`: _string_
+- `title`: _string_
+- `isCheckedOut`: _boolean, initially false_
+- `ratings`: _array, initially empty_
+- `songs`: _array of strings_
 
 **Getters**: all properties have a getter
 
 **Methods**:
 
-- .getAverageRating()
-- .toggleCheckOutStatus()
-- .addRating()
+- `.getAverageRating()`
+- `.toggleCheckOutStatus()`
+- `.addRating()`
 
 ---
 
