@@ -36,15 +36,17 @@ const sharedTests = () => {
   testPropGetter("ratings", "array");
 
   describe("toggleCheckOutStatus()", () => {
-    it("works", () => {
+    it("should toggle _isCheckedOut value", () => {
       expect(obj.isCheckedOut).toBe(false);
       obj.toggleCheckOutStatus();
       expect(obj.isCheckedOut).toBe(true);
+      obj.toggleCheckOutStatus();
+      expect(obj.isCheckedOut).toBe(false);
     });
   });
 
   describe("addRating()", () => {
-    it("works", () => {
+    it("should add rating to _ratings array", () => {
       expect(obj.ratings).toEqual([]);
       obj.addRating(4);
       obj.addRating(5);
@@ -55,7 +57,7 @@ const sharedTests = () => {
   });
 
   describe("getAverageRating()", () => {
-    it("works", () => {
+    it("should calculate average rating", () => {
       obj.addRating(4);
       obj.addRating(5);
       expect(obj.getAverageRating()).toBe(4.5);
