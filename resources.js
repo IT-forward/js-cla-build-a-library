@@ -22,7 +22,7 @@ export class Media {
   }
 
   toggleCheckOutStatus() {
-    this._isCheckedOut = true;
+    this._isCheckedOut = !this._isCheckedOut;
   }
 
   addRating(rating) {
