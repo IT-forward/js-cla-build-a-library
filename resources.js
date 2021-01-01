@@ -18,10 +18,8 @@ export class Media {
   }
 
   getAverageRating(){
-    const curRatings = this._ratings;
-    const curRatingsLength = curRatings.length;
-    const curRatingsSum = curRatings.reduce((acc, curValue) => acc + curValue);
-    const avrRating = curRatingsSum / curRatingsLength;
+    const curRatingsSum = this._ratings.reduce((acc, curValue) => acc + curValue);
+    const avrRating = curRatingsSum / this._ratings.length;
     
     return avrRating;
   }
