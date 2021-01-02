@@ -13,20 +13,18 @@ export class Media {
   get ratings() {
     return this._ratings;
   }
+  toggleCheckOutStatus() {
+    this._isCheckedOut = this._isCheckedOut ? false : true;
+  }
+  addRating(rating) {
+    this._ratings.push(rating);
+  }
   getAverageRating() {
     let sum = 0;
     for (let i = 0; i < this._ratings.length; i++) {
       sum += this._ratings[i];
     }
-    let average = sum / this._ratings.length;
-    return average;
-  }
-  toggleCheckOutStatus() {
-    this._isCheckedOut = this._isCheckedOut ? false : true;
-    return this._isCheckedOut;
-  }
-  addRating(rating) {
-    this._ratings.push(rating);
+    return sum / this._ratings.length;
   }
 }
 
