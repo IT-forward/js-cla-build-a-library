@@ -19,14 +19,12 @@ export class Media {
 
   getAverageRating(){
     const curRatingsSum = this._ratings.reduce((acc, curValue) => acc + curValue);
-    const avrRating = curRatingsSum / this._ratings.length;
     
-    return avrRating;
+    return curRatingsSum / this._ratings.length;
   }
 
   toggleCheckOutStatus(){
     this._isCheckedOut = !this._isCheckedOut;
-    return this._isCheckedOut;
   }
   
   addRating(rating){
