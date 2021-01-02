@@ -11,5 +11,6 @@ console.log(movie);
 let music = new CD("Grigory Leps", "Lucky Man", ["Na zare"]);
 music.toggleCheckOutStatus();
 music.addRating(10);
+music.addRating(7);
+console.log(music.getAverageRating());
 console.log(music);
-

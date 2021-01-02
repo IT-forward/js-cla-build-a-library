@@ -19,12 +19,10 @@ constructor(title) {
     for (let i = 0; i < this._ratings.length; i++) {
       amount += this._ratings[i];
     }
-    let average = amount / this._ratings.length;
-    return average; 
+    return amount / this._ratings.length;
   }
   toggleCheckOutStatus() {
-    this._isCheckedOut = !this._isCheckedOut ? true : false;
-    return this._isCheckedOut;
+    this._isCheckedOut = !this._isCheckedOut;
   }
   addRating(rating) {
     this._ratings.push(rating);
