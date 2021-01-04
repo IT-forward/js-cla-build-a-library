@@ -14,7 +14,7 @@ export class Media {
     return this._ratings;
   }
   toggleCheckOutStatus() {
-    this._isCheckedOut = this._isCheckedOut ? false : true;
+    this._isCheckedOut = !this._isCheckedOut;
   }
   addRating(rating) {
     this._ratings.push(rating);
