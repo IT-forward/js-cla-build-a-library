@@ -14,11 +14,11 @@ export class Media {
    return this._ratings;
   }
   getAverageRating() {
-    let quantity = 0;
+    let sum = 0;
     for(let i = 0; i < this._ratings.length; i++){
-      quantity = quantity + this._ratings[i];
+      sum = sum + this._ratings[i];
     }
-    return quantity / this._ratings.length;
+    return sum / this._ratings.length;
   }
   toggleCheckOutStatus() {
     this._isCheckedOut = !(this._isCheckedOut);
@@ -67,7 +67,7 @@ export class CD extends Media {
  get artist() {
    return this._artist;
  }
- get songs() {
+ get songs() { 
    return this._songs;
  }
 }
